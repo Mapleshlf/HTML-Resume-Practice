@@ -1,0 +1,316 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    width: 1920px;
+    margin: 0 auto;
+}
+.header{
+    margin: 0 auto;
+    position: fixed;
+    background: #ffffff;
+    width: 100%;
+    top: 0;
+    /* position: fixed;
+    top:0;
+    left:460px; */
+}
+/* link */
+.header .link{
+    height: 32px;
+    background: #F6F6F8;
+    margin-right: 405px;
+}
+.header .link ul{
+    float: right;
+    text-decoration: none;
+    display: flex;
+}
+.header .link li a img{
+    width: 16px;
+    height: 16px;
+    float:left;
+}
+.header .link a:hover{
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* .header .link:after{
+    content:'';
+    display:block;
+    clear:both;
+} */
+.facebook{
+   color: #4460a0;
+   border-right:2px solid #cccccc;
+   padding-right:8px;
+}
+/* topBar */
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+}
+.topBar img{
+    width: 150px;
+    margin-left: 405px;
+}
+.topBar ul{
+    display: flex;
+    gap: 42px;
+    margin-right: 405px;
+}
+.topBar li a{
+    display: block;
+    height: 16px;
+    padding:28px 0px;
+}
+.topBar li a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+    cursor: pointer;
+    background: #00CC99;
+}
+.section{
+    border-bottom: 4px solid #00CC99;
+}
+.content{
+    margin-top: 108px;
+}
+.content .mainTitle{
+    height: 390px;
+    background-image: url(../img/bg.image.png);
+    background-size: 1920px 390px;
+    display: flex;
+    align-items: center;
+}
+
+.content .mainTitle h1{
+    /* margin-left:498px; */
+    width: 100%;
+    padding:26.5px 498px;
+    font-family: Microsoft JhengHei UI;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    text-align: left;
+    background: #FFFFFF26;
+    color: #1E1E1E;
+    
+}
+.content ul{
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.content li{
+    width: 310px;
+    height: 313px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 2px;
+    font-family:Microsoft JhengHei UI;
+    line-height: 24px;
+}
+.content li img{
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.content li h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.content li p{
+    font-weight: 400;
+    font-size:16px;
+}
+#jQuery{
+    display: flex;
+    width: 310px;
+    height: 120px;
+    flex-direction: column;
+}
+#jQuery li{
+    padding:0;
+    box-shadow: 0px 0px 0px #fff;
+    text-align: left;
+    line-height: 24px;
+    text-indent: 1em;
+    list-style-type: disc; 
+    list-style-position: inside;
+}
+.difference{
+    width: 920px;
+    margin: 0 auto;
+}
+.difference h3{
+    text-align: center;
+    margin-bottom: 24px;
+}
+.difference table{
+    margin-bottom: 60px;
+}
+.difference h3, .difference th,.difference td,.signUp h3{
+    font-family: Microsoft JhengHei UI;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+}
+.difference th,.difference td{
+    text-align: left;
+    width: 25%;
+    border: 1px solid #CCCCCC;
+    border-left: none;
+    border-right:none;
+    padding:6px 17px;
+}
+.difference th{
+    line-height: 24px;
+}
+.difference td{
+    font-size:16px;
+    font-weight:400;
+}
+.difference tr .green{
+    color: #00CC99;
+    font-weight:700;
+}
+
+.signUp{
+    background-image: linear-gradient(#E4FFF8,#A2DDCE);
+    padding-top:36px;
+}
+.signUp h3{
+    text-align: center;
+    margin-bottom: 28px;
+}
+.signUp form{
+    width: 730px;
+    margin: 0 auto;
+    
+}
+.signUp .input{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.input label{
+    display: block;
+    margin-bottom: 8px;
+    line-height: 20px;
+    font-size: 16px;
+}
+.input input{
+    display: block;
+    font-family: Microsoft JhengHei UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 16px;
+    width: 351px;
+    padding: 8px;
+    border-radius: 1px;
+    border: 1px solid #AAAAAA;
+}
+.input textarea{
+    width: 350px;
+    height: 200px;
+    border: 1px solid #AAAAAA;
+    resize : none;
+    box-sizing: border-box;
+}
+.signUp form .btn{
+    background: #00251A;
+    color: #FFFFFF;
+    font-family: Microsoft JhengHei UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    width: 159px;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid #00251A;
+    margin: 0 0 36px 286px;
+}
+.signUp form .btn:hover{
+    color: #000000;
+    background: #ffffff;
+    cursor: pointer;
+}
+.footer{
+}
+.footer img{
+    float:left;
+    width: 150px;
+    margin-left: 405px;
+    padding:22px  0;
+}
+.footer p{
+    float: right;
+    font-family: Microsoft JhengHei UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-right: 405px;
+    padding:16px 0;
+}
+.footer span{
+    color: #00CC99;
+}
